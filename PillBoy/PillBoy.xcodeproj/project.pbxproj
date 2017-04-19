@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F183B6F1EA02DD100962730 /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F183B6E1EA02DD100962730 /* AnalogJoystick.swift */; };
+		3FC8DC961E982A7400760EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DC951E982A7400760EBF /* AppDelegate.swift */; };
+		3FC8DC9C1E982A7400760EBF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DC9B1E982A7400760EBF /* GameScene.swift */; };
+		3FC8DC9E1E982A7400760EBF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DC9D1E982A7400760EBF /* GameViewController.swift */; };
+		3FC8DCA11E982A7400760EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC8DC9F1E982A7400760EBF /* Main.storyboard */; };
+		3FC8DCA31E982A7400760EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC8DCA21E982A7400760EBF /* Assets.xcassets */; };
+		3FC8DCA61E982A7400760EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC8DCA41E982A7400760EBF /* LaunchScreen.storyboard */; };
+		3FC8DCB11E982A7400760EBF /* PillBoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DCB01E982A7400760EBF /* PillBoyTests.swift */; };
+		3FC8DCBC1E982A7400760EBF /* PillBoyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DCBB1E982A7400760EBF /* PillBoyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC8DCAD1E982A7400760EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC8DC8A1E982A7400760EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC8DC911E982A7400760EBF;
+			remoteInfo = PillBoy;
+		};
+		3FC8DCB81E982A7400760EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC8DC8A1E982A7400760EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC8DC911E982A7400760EBF;
+			remoteInfo = PillBoy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F183B6E1EA02DD100962730 /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
+		3FC8DC921E982A7400760EBF /* PillBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC8DC951E982A7400760EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FC8DC9B1E982A7400760EBF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3FC8DC9D1E982A7400760EBF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3FC8DCA01E982A7400760EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FC8DCA21E982A7400760EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC8DCA51E982A7400760EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FC8DCA71E982A7400760EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC8DCAC1E982A7400760EBF /* PillBoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillBoyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC8DCB01E982A7400760EBF /* PillBoyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillBoyTests.swift; sourceTree = "<group>"; };
+		3FC8DCB21E982A7400760EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC8DCB71E982A7400760EBF /* PillBoyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillBoyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC8DCBB1E982A7400760EBF /* PillBoyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillBoyUITests.swift; sourceTree = "<group>"; };
+		3FC8DCBD1E982A7400760EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC8DC8F1E982A7400760EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC8DCA91E982A7400760EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC8DCB41E982A7400760EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC8DC891E982A7400760EBF = {
+			isa = PBXGroup;
+			children = (
+				3FC8DC941E982A7400760EBF /* PillBoy */,
+				3FC8DCAF1E982A7400760EBF /* PillBoyTests */,
+				3FC8DCBA1E982A7400760EBF /* PillBoyUITests */,
+				3FC8DC931E982A7400760EBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC8DC931E982A7400760EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC8DC921E982A7400760EBF /* PillBoy.app */,
+				3FC8DCAC1E982A7400760EBF /* PillBoyTests.xctest */,
+				3FC8DCB71E982A7400760EBF /* PillBoyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC8DC941E982A7400760EBF /* PillBoy */ = {
+			isa = PBXGroup;
+			children = (
+				3FC8DC951E982A7400760EBF /* AppDelegate.swift */,
+				3F183B6E1EA02DD100962730 /* AnalogJoystick.swift */,
+				3FC8DC9B1E982A7400760EBF /* GameScene.swift */,
+				3FC8DC9D1E982A7400760EBF /* GameViewController.swift */,
+				3FC8DC9F1E982A7400760EBF /* Main.storyboard */,
+				3FC8DCA21E982A7400760EBF /* Assets.xcassets */,
+				3FC8DCA41E982A7400760EBF /* LaunchScreen.storyboard */,
+				3FC8DCA71E982A7400760EBF /* Info.plist */,
+			);
+			path = PillBoy;
+			sourceTree = "<group>";
+		};
+		3FC8DCAF1E982A7400760EBF /* PillBoyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC8DCB01E982A7400760EBF /* PillBoyTests.swift */,
+				3FC8DCB21E982A7400760EBF /* Info.plist */,
+			);
+			path = PillBoyTests;
+			sourceTree = "<group>";
+		};
+		3FC8DCBA1E982A7400760EBF /* PillBoyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC8DCBB1E982A7400760EBF /* PillBoyUITests.swift */,
+				3FC8DCBD1E982A7400760EBF /* Info.plist */,
+			);
+			path = PillBoyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC8DC911E982A7400760EBF /* PillBoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC8DCC01E982A7400760EBF /* Build configuration list for PBXNativeTarget "PillBoy" */;
+			buildPhases = (
+				3FC8DC8E1E982A7400760EBF /* Sources */,
+				3FC8DC8F1E982A7400760EBF /* Frameworks */,
+				3FC8DC901E982A7400760EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PillBoy;
+			productName = PillBoy;
+			productReference = 3FC8DC921E982A7400760EBF /* PillBoy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FC8DCAB1E982A7400760EBF /* PillBoyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC8DCC31E982A7400760EBF /* Build configuration list for PBXNativeTarget "PillBoyTests" */;
+			buildPhases = (
+				3FC8DCA81E982A7400760EBF /* Sources */,
+				3FC8DCA91E982A7400760EBF /* Frameworks */,
+				3FC8DCAA1E982A7400760EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC8DCAE1E982A7400760EBF /* PBXTargetDependency */,
+			);
+			name = PillBoyTests;
+			productName = PillBoyTests;
+			productReference = 3FC8DCAC1E982A7400760EBF /* PillBoyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FC8DCB61E982A7400760EBF /* PillBoyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC8DCC61E982A7400760EBF /* Build configuration list for PBXNativeTarget "PillBoyUITests" */;
+			buildPhases = (
+				3FC8DCB31E982A7400760EBF /* Sources */,
+				3FC8DCB41E982A7400760EBF /* Frameworks */,
+				3FC8DCB51E982A7400760EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC8DCB91E982A7400760EBF /* PBXTargetDependency */,
+			);
+			name = PillBoyUITests;
+			productName = PillBoyUITests;
+			productReference = 3FC8DCB71E982A7400760EBF /* PillBoyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC8DC8A1E982A7400760EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = CMPE137;
+				TargetAttributes = {
+					3FC8DC911E982A7400760EBF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					3FC8DCAB1E982A7400760EBF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FC8DC911E982A7400760EBF;
+					};
+					3FC8DCB61E982A7400760EBF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FC8DC911E982A7400760EBF;
+					};
+				};
+			};
+			buildConfigurationList = 3FC8DC8D1E982A7400760EBF /* Build configuration list for PBXProject "PillBoy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC8DC891E982A7400760EBF;
+			productRefGroup = 3FC8DC931E982A7400760EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC8DC911E982A7400760EBF /* PillBoy */,
+				3FC8DCAB1E982A7400760EBF /* PillBoyTests */,
+				3FC8DCB61E982A7400760EBF /* PillBoyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC8DC901E982A7400760EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC8DCA11E982A7400760EBF /* Main.storyboard in Resources */,
+				3FC8DCA31E982A7400760EBF /* Assets.xcassets in Resources */,
+				3FC8DCA61E982A7400760EBF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC8DCAA1E982A7400760EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC8DCB51E982A7400760EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC8DC8E1E982A7400760EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC8DC9C1E982A7400760EBF /* GameScene.swift in Sources */,
+				3F183B6F1EA02DD100962730 /* AnalogJoystick.swift in Sources */,
+				3FC8DC9E1E982A7400760EBF /* GameViewController.swift in Sources */,
+				3FC8DC961E982A7400760EBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC8DCA81E982A7400760EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC8DCB11E982A7400760EBF /* PillBoyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC8DCB31E982A7400760EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC8DCBC1E982A7400760EBF /* PillBoyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC8DCAE1E982A7400760EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC8DC911E982A7400760EBF /* PillBoy */;
+			targetProxy = 3FC8DCAD1E982A7400760EBF /* PBXContainerItemProxy */;
+		};
+		3FC8DCB91E982A7400760EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC8DC911E982A7400760EBF /* PillBoy */;
+			targetProxy = 3FC8DCB81E982A7400760EBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FC8DC9F1E982A7400760EBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC8DCA01E982A7400760EBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FC8DCA41E982A7400760EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC8DCA51E982A7400760EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC8DCBE1E982A7400760EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC8DCBF1E982A7400760EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC8DCC11E982A7400760EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PillBoy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifters.PillBoy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FC8DCC21E982A7400760EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PillBoy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifters.PillBoy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FC8DCC41E982A7400760EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PillBoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifters.PillBoyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PillBoy.app/PillBoy";
+			};
+			name = Debug;
+		};
+		3FC8DCC51E982A7400760EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PillBoyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifters.PillBoyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PillBoy.app/PillBoy";
+			};
+			name = Release;
+		};
+		3FC8DCC71E982A7400760EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PillBoyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifters.PillBoyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PillBoy;
+			};
+			name = Debug;
+		};
+		3FC8DCC81E982A7400760EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PillBoyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifters.PillBoyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PillBoy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC8DC8D1E982A7400760EBF /* Build configuration list for PBXProject "PillBoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC8DCBE1E982A7400760EBF /* Debug */,
+				3FC8DCBF1E982A7400760EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC8DCC01E982A7400760EBF /* Build configuration list for PBXNativeTarget "PillBoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC8DCC11E982A7400760EBF /* Debug */,
+				3FC8DCC21E982A7400760EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC8DCC31E982A7400760EBF /* Build configuration list for PBXNativeTarget "PillBoyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC8DCC41E982A7400760EBF /* Debug */,
+				3FC8DCC51E982A7400760EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC8DCC61E982A7400760EBF /* Build configuration list for PBXNativeTarget "PillBoyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC8DCC71E982A7400760EBF /* Debug */,
+				3FC8DCC81E982A7400760EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC8DC8A1E982A7400760EBF /* Project object */;
+}
