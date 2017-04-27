@@ -9,20 +9,69 @@
 import SpriteKit
 import GameplayKit
 
+
 class GameScene: SKScene {
     
-    var playerNode: SKSpriteNode?
-    let joystickStickColorBtn = SKLabelNode(text: "Sticks Random Color"), joystickSubstrateColorBtn = SKLabelNode(text: "Substrates Random Color")
+    var playerNode : SKSpriteNode!
+    var playerMovementFrames : [SKTexture]!
     
-    let moveAnalogStick = AnalogJoystick(diameter: 110)
+    let moveAnalogStick = AnalogJoystick(diameter: 110, colors: (UIColor.black, UIColor.gray))
+    
     
     override func didMove(to view: SKView) {
         //Scene setup
         backgroundColor = UIColor.white
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         
+        //Define animations
+        let playerAtlas = SKTextureAtlas(named: "texture")
+        
+        //Walk Down
+        let pd0 = playerAtlas.textureNamed("spr_p1_down_0.png")
+        let pd1 = playerAtlas.textureNamed("spr_p1_down_1.png")
+        let pd2 = playerAtlas.textureNamed("spr_p1_down_2.png")
+        let pd3 = playerAtlas.textureNamed("spr_p1_down_3.png")
+        
+        //Hurt
+        let ph0 = playerAtlas.textureNamed("spr_p1_hurt_0.png")
+        
+        //Walk Left
+        let pl0 = playerAtlas.textureNamed("spr_p1_left_0.png")
+        let pl1 = playerAtlas.textureNamed("spr_p1_left_1.png")
+        let pl2 = playerAtlas.textureNamed("spr_p1_left_2.png")
+        let pl3 = playerAtlas.textureNamed("spr_p1_left_3.png")
+        
+        //Walk Right
+        let pr0 = playerAtlas.textureNamed("spr_p1_right_0.png")
+        let pr1 = playerAtlas.textureNamed("spr_p1_right_1.png")
+        let pr2 = playerAtlas.textureNamed("spr_p1_right_2.png")
+        let pr3 = playerAtlas.textureNamed("spr_p1_right_3.png")
+        
+        //Walk Up
+        let pu0 = playerAtlas.textureNamed("spr_p1_up_0.png")
+        let pu1 = playerAtlas.textureNamed("spr_p1_up_1.png")
+        let pu2 = playerAtlas.textureNamed("spr_p1_up_2.png")
+        let pu3 = playerAtlas.textureNamed("spr_p1_up_3.png")
+        
+        let walkDownFrames = [pd0, pd1, pd2, pd3]
+        let walkLeftFrames = [pl0, pl1, pl2, pl3]
+        let walkRightFrames = [pr0, pr1, pr2, pr3]
+        let walkUpFrames = [pu0, pu1, pu2, pu3]
+        let hurtFrames = [ph0]
+        
+        playerMovementFrames = walkDownFrames
+        
+        
+        //initialize player pill
+        let firstFrame = playerMovementFrames[0]
+        playerNode = SKSpriteNode(texture: firstFrame)
+        playerNode.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        addChild(playerNode)
+        
+        
         moveAnalogStick.position = CGPoint(x: moveAnalogStick.radius + 15, y: moveAnalogStick.radius + 15)
         addChild(moveAnalogStick)
+        
         
         //Handlers begin
         
@@ -46,82 +95,26 @@ class GameScene: SKScene {
         
         //Handlers end
         
-        let selfHeight = frame.height
-        let btnsOffset: CGFloat = 10
-        let joystickSizeLabel = SKLabelNode(text: "Joysticks Size:")
-        joystickSizeLabel.fontSize = 20
-        joystickSizeLabel.fontColor = UIColor.black
-        joystickSizeLabel.horizontalAlignmentMode = .left
-        joystickSizeLabel.verticalAlignmentMode = .top
-        joystickSizeLabel.position = CGPoint(x: btnsOffset, y: selfHeight - btnsOffset)
-        addChild(joystickSizeLabel)
         
-        joystickStickColorBtn.fontColor = UIColor.black
-        joystickStickColorBtn.fontSize = 20
-        joystickStickColorBtn.verticalAlignmentMode = .top
-        joystickStickColorBtn.horizontalAlignmentMode = .left
-        joystickStickColorBtn.position = CGPoint(x: btnsOffset, y: selfHeight - 40)
-        addChild(joystickStickColorBtn)
-        
-        joystickSubstrateColorBtn.fontColor = UIColor.black
-        joystickSubstrateColorBtn.fontSize = 20
-        joystickSubstrateColorBtn.verticalAlignmentMode = .top
-        joystickSubstrateColorBtn.horizontalAlignmentMode = .left
-        joystickSubstrateColorBtn.position = CGPoint(x: btnsOffset, y: selfHeight - 65)
-        addChild(joystickSubstrateColorBtn)
         
         view.isMultipleTouchEnabled = true
+        playerWalking()
     }
     
-    func addPlayer(_ position: CGPoint) {
-        
-        guard let playerImage = UIImage(named: "apple") else { return }
-        
-        let texture = SKTexture(image: playerImage)
-        let player = SKSpriteNode(texture: texture)
-        player.physicsBody = SKPhysicsBody(texture: texture, size: player.size)
-        player.physicsBody!.affectedByGravity = false
-        
-        insertChild(player, at: 0)
-        player.position = position
-        playerNode = player
+    func playerWalking() {
+        playerNode.run(SKAction.repeatForever(SKAction.animate(with: playerMovementFrames, timePerFrame: 0.1, resize: false, restore: true)), withKey: "walkingInPlacePlayer")
+    }
+    
+    func playerMoveEnd(){
+        playerNode.removeAllActions()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
        //Called when a touch begins
         
-        if let touch = touches.first {
-            
-            let node = atPoint(touch.location(in: self))
-            
-            switch node {
-                
-            case joystickStickColorBtn:
-                setRandomStickColor()
-            case joystickSubstrateColorBtn:
-                setRandomSubstrateColor()
-            default:
-                addPlayer(touch.location(in: self))
-            }
-        }
-    }
-    
-    func setRandomStickColor() {
-        
-        let randomColor = UIColor.random()
-        moveAnalogStick.stick.color = randomColor
-    }
-    
-    func setRandomSubstrateColor() {
-        
-        let randomColor = UIColor.random()
-        moveAnalogStick.substrate.color = randomColor
-    }
-    
-    override func update(_ currentTime: TimeInterval) {
-        /* Called before each frame is rendered */
     }
 }
+
 
 extension UIColor {
     
