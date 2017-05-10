@@ -75,11 +75,11 @@ class GameScene: SKScene {
         
         //Handlers begin
         
-        moveAnalogStick.startHandler = { [unowned self] in
+       /*moveAnalogStick.startHandler = { [unowned self] in
             
             guard let aN = self.playerNode else { return }
             aN.run(SKAction.sequence([SKAction.scale(to: 0.5, duration: 0.5), SKAction.scale(to: 1, duration: 0.5)]))
-        }
+        }*/
         
         moveAnalogStick.trackingHandler = { [unowned self] data in
             
@@ -87,11 +87,11 @@ class GameScene: SKScene {
             aN.position = CGPoint(x: aN.position.x + (data.velocity.x * 0.12), y: aN.position.y + (data.velocity.y * 0.12))
         }
         
-        moveAnalogStick.stopHandler = { [unowned self] in
+        /*moveAnalogStick.stopHandler = { [unowned self] in
             
             guard let aN = self.playerNode else { return }
             aN.run(SKAction.sequence([SKAction.scale(to: 1.5, duration: 0.5), SKAction.scale(to: 1, duration: 0.5)]))
-        }
+        }*/
         
         //Handlers end
         
